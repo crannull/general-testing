@@ -16,17 +16,17 @@ function updateWebTimer() {
 }
 
 // Run immediately to avoid a blank screen on load
-updateWebTimer();
+//updateWebTimer();
 
 // Calculate milliseconds remaining until the exact next minute mark
 // This ensures the clock flips perfectly when the system minute changes
-const currentSeconds = new Date().getSeconds();
-const delayToNextMinute = (60 - currentSeconds) * 1000;
+//const currentSeconds = new Date().getSeconds();
+//const delayToNextMinute = (60 - currentSeconds) * 1000;
 
-setTimeout(() => {
+//setTimeout(() => {
   // Sync the first update on the exact minute mark
-  updateWebTimer();
+ // updateWebTimer();
   
   // Set the interval to loop every 60,000 milliseconds (1 minute) from then on
   setInterval(updateWebTimer, 500);
-}, delayToNextMinute);
+//}, delayToNextMinute);
